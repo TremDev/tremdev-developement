@@ -1,0 +1,58 @@
+.about-page{
+
+    .text-zone {
+        z-index: 200;
+        p{
+            font-size: 15px;
+        }
+    }
+}
+.lopoticontainer-wrap {
+    background: #4a345e;
+    float: right;
+    width: 53%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+
+@media (max-width:850px){
+    .about-page {
+        .text-zone {
+            position: absolute;
+            left: 15%;
+            top: 20%;
+            width: 85%;
+            vertical-align: middle;
+
+            h1 {
+                font-size: 43px;
+                margin-bottom: 20px;
+
+                 &::after {
+                     bottom: -13px;
+                 }
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            .flat-button {
+                margin-right: 30px;
+                margin-top: 10px;
+            }
+        }
+
+            .lopoticontainer-wrap {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              float: none;
+              width: 85%;
+              height: 60%;
+              margin-bottom: 20px;
+              transition: 1s ;
+            }
+    }
+
+}
